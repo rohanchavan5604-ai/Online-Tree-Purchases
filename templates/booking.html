@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='booking.css') }}">
+
+<h2>Book {{ plant[2] }}</h2>
+
+<form method="post" class="form">
+    <input type="text" value="{{ session['user'] }}" readonly>
+    <input type="text" name="phone" placeholder="Phone Number" required>
+    <textarea name="address" placeholder="Address" required></textarea>
+    <input type="number" name="quantity" placeholder="Quantity" required>
+    <input type="date" name="date" required>
+    <input type="time" name="time" required>
+    <button>Confirm Booking</button>
+</form>
+
+{% endblock %}

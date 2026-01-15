@@ -1,0 +1,33 @@
+/* ===== LOGIN PAGE ===== */
+
+.form {
+    max-width: 360px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.form button {
+    width: 100%;
+    padding: 10px;
+    background: #2f855a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background: #276749;
+}

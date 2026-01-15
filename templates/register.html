@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='user_login.css') }}">
+
+<h2 style="text-align:center;">User Registration</h2>
+
+<form method="post" class="form">
+    <input type="text" name="username" placeholder="Create Username" required>
+    <input type="password" name="password" placeholder="Create Password" required>
+
+    <button>Register</button>
+
+    {% if msg %}
+    <p style="color:red; text-align:center;">{{ msg }}</p>
+    {% endif %}
+
+    <p style="text-align:center; margin-top:10px;">
+        Already have an account? <a href="/user_login">Login here</a>
+    </p>
+</form>
+{% endblock %}

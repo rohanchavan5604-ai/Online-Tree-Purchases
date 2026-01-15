@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+<h2>
+  <span style="color:rgb(5, 72, 14); margin-left:15px;">Welcome {{ session['user'] }}</span>
+</h2>
+
+<div class="cards">
+  <div class="card">
+    <img src="/static/images/fruit.jpg">
+    <h3>Fruit Plants</h3>
+    <a href="/plants/fruit">Show Plants</a>
+  </div>
+
+  <div class="card">
+    <img src="/static/images/flower.jpg">
+    <h3>Flower Plants</h3>
+    <a href="/plants/flower">Show Plants</a>
+  </div>
+
+  <div class="card">
+    <img src="/static/images/show.jpg">
+    <h3>Show Plants</h3>
+    <a href="/plants/show">Show Plants</a>
+  </div>
+</div>
+{% endblock %}

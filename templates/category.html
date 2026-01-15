@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='category.css') }}">
+
+<h2 style="text-align:center;">🌿 Nursery Categories</h2>
+
+<div class="cards">
+
+    <div class="card">
+        <img src="/static/images/fruit.jpg">
+        <h3>Fruit Plants</h3>
+        <p>Fresh & healthy fruit plants</p>
+        <a href="/plants/fruit">View Plants</a>
+    </div>
+
+    <div class="card">
+        <img src="/static/images/flower.jpg">
+        <h3>Flower Plants</h3>
+        <p>Beautiful flowering plants</p>
+        <a href="/plants/flower">View Plants</a>
+    </div>
+
+    <div class="card">
+        <img src="/static/images/show.jpg">
+        <h3>Show Plants</h3>
+        <p>Decorative & show plants</p>
+        <a href="/plants/show">View Plants</a>
+    </div>
+
+</div>
+
+{% endblock %}

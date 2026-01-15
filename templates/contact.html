@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>📞 Contact Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}">
+
+</head>
+
+<body>
+
+    <header class="contact-header">
+        📞 Contact Us
+    </header>
+
+    <div class="contact-container">
+        <h2 class="main-title">Get in Touch</h2>
+
+        <!-- Person 1 -->
+        <div class="person-card horizontal">
+            <img src="/static/images/aniketjadhav.jpeg">
+
+            <div class="person-info">
+                <h3>👤 Aniket jadhav</h3>
+                <p><strong>📍 Address:</strong> Sangli, Maharashtra</p>
+                <p><strong>📞 Phone:</strong> +91 9960930288</p>
+                <p><strong>📧 Email:</strong> aniketjadhav0035@gmail.com</p>
+            </div>
+        </div>
+
+        <!-- Person 2 -->
+        <div class="person-card horizontal">
+            <img src="/static/images/ranjit.jpeg">
+
+            <div class="person-info">
+                <h3>👤 Rangit patil</h3>
+                <p><strong>📍 Address:</strong> Sangli, Maharashtra</p>
+                <p><strong>📞 Phone:</strong> +91 9552123713</p>
+                <p><strong>📧 Email:</strong> rangitpatil2408@gmail.com</p>
+            </div>
+        </div>
+
+        <a href="{{ url_for('home') }}" class="back-btn">⬅ Back to Home</a>
+    </div>
+
+</body>
+
+</html>

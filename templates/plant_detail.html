@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='plant_detail.css') }}">
+
+<div class="detail">
+    <img src="/static/images/{{ plant[4] }}">
+    <h2>{{ plant[2] }}</h2>
+    <p>{{ plant[5] }}</p>
+    <h3>Price: ₹{{ plant[3] }}</h3>
+    <a href="/book/{{ plant[0] }}">Book Now</a>
+</div>
+{% endblock %}

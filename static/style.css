@@ -1,0 +1,73 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+    background: #f0fdf4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: linear-gradient(135deg, #2f855a, #38a169);
+    color: white;
+    padding: 18px 10px;
+    text-align: center;
+}
+
+/* TITLE */
+header h1 {
+    margin-bottom: 12px;
+    font-size: 26px;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+/* NAV LINKS */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+/* HOVER EFFECT */
+nav a:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+    flex: 1;
+    padding: 30px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #1a202c;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 14px;
+}
+
+/* ===== OPTIONAL CENTER TEXT ===== */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}

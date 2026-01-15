@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nursery Order System</title>
+
+    <!-- CSS LINK (VERY IMPORTANT) -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>🌱 Nursery Order System</h1>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/category">Nursery Category</a>
+            <a href="/contact">Contact</a>
+
+            {% if session.get('user') %}
+
+            <a href="/logout">Logout</a>
+            {% else %}
+            <a href="/user_login">User Login</a>
+            <a href="/register">Register</a>
+            {% endif %}
+
+            {% if session.get('admin') %}
+            <a href="/admin">Admin</a>
+            <a href="/logout">Admin Logout</a>
+            {% else %}
+            <a href="/admin-login">Admin Login</a>
+            {% endif %}
+        </nav>
+
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>© 2026 Nursery Order System</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+/* ===== ADMIN PAGE ===== */
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #065f46;
+}
+
+table {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 14px;
+}
+
+table th {
+    background: #2f855a;
+    color: white;
+}

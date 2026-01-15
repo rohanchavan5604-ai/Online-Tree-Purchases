@@ -1,0 +1,40 @@
+/* ===== BOOKING PAGE ===== */
+
+.form {
+    max-width: 420px;
+    margin: auto;
+    background: white;
+    padding: 26px;
+    border-radius: 16px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.form textarea {
+    resize: none;
+}
+
+.form button {
+    width: 100%;
+    padding: 11px;
+    background: #2f855a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background: #276749;
+}
